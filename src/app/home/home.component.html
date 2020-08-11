@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="row">
+        <h3>Dashboard</h3>
+    </div>
+    <div class="row">
+        <div class="col-md-4" *ngFor="let item of usersArray">
+            <div class="box-detail">
+                <ul>
+                    <li>{{item.firstName}}      {{item.lastName}} </li>
+                    <li>{{item.email}} </li>
+                    <li>{{item.register_date}}</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</div>

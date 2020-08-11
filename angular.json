@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "myapp-phatiphan"
+    }
+  },
+  "defaultProject": "myapp-phatiphan",
+  "cli": {
+    "analytics": "723f69a0-ac99-44d3-856b-70e6888733bd"
+  }
 }
