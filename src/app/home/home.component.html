@@ -9,6 +9,7 @@
                     <li>{{item.firstName}}      {{item.lastName}} </li>
                     <li>{{item.email}} </li>
                     <li>{{item.register_date}}</li>
+                    <li><button class="btn btn-danger btn-sm" (click)="deleteUser(item.email)">delete</button></li>
                 </ul>
             </div>
         </div>

@@ -14,7 +14,7 @@ export class LoginListComponent implements OnInit {
         this.http.post<any>('http://localhost:5000/api/login', res).subscribe(res => {
             console.log('Login: ' + res.result);
             if (res.result == true){
-                this.router.navigate(['/']);
+                this.router.navigate(['/dashboard']);
             }
             else alert('email or password is wrong');
         })
