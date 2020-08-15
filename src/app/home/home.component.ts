@@ -10,7 +10,6 @@ import { HttpClient } from '@angular/common/http';
 export class HomeComponent implements OnInit {
 
   title = 'myApp';
-  bow = 'wimonwan';
   usersArray: any[] = []
 
   constructor(private http: HttpClient) {
