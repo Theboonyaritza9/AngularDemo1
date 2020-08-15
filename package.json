@@ -8,7 +8,9 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "dev": "cd Backend && nodemon  server.js"
+    "dev": "cd Backend && nodemon  server.js",
+    "bow": "cd Backend && nodemon  server.js",
+    "fr": "cd Backend && nodemon  server.js"
   },
   "private": true,
   "dependencies": {

@@ -22,8 +22,10 @@ app.use(function (req, res, next) {
 });
 
 // config Database
-const urlDB = 'mongodb+srv://admin:1234@mongo3-crud-7dsrv.mongodb.net/usersDB?retryWrites=true&w=majority'
-mongoose.connect(urlDB, { useUnifiedTopology: true, useNewUrlParser: true, useCreateIndex: true }, (err) => {
+const frDB = 'mongodb+srv://admin:1234@mongo3-crud-7dsrv.mongodb.net/usersDB?retryWrites=true&w=majority';
+const bowdb = 'mongodb+srv://admin:1234@cluster0.vozic.mongodb.net/usersDB?retryWrites=true&w=majority';
+
+mongoose.connect(bowdb, { useUnifiedTopology: true, useNewUrlParser: true, useCreateIndex: true }, (err) => {
     if (err) console.log('MongoDB can not connect...');
     else console.log('MongoDB connected successfully...');
 });

@@ -1,3 +1,4 @@
 set up Angular to local computer: npm install -g @angular/cli
 install Nodejs 
 open Angular: ng serve --open 
+ng g c (name)

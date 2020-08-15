@@ -12,6 +12,7 @@ import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from "@angular/common/http";
 import { UserdetailComponent } from './userdetail/userdetail.component';
+import { CustomerListComponent } from './customer-list/customer-list.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { UserdetailComponent } from './userdetail/userdetail.component';
     NavComponent,
     HomeComponent,
     UserComponent,
-    UserdetailComponent
+    UserdetailComponent,
+    CustomerListComponent
   ],
   imports: [
     BrowserModule,
@@ -32,7 +34,9 @@ import { UserdetailComponent } from './userdetail/userdetail.component';
       {path: '', component: LoginListComponent},
       {path: 'dashboard', component: HomeComponent },
       {path: 'register', component: RegisterComponent},
-      {path: 'user/:id', component: UserdetailComponent}
+      {path: 'user/:id', component: UserdetailComponent},
+      {path: 'detail', component: UserdetailComponent},
+      {path: 'customer', component: CustomerListComponent}
     ])
   ],
   providers: [],

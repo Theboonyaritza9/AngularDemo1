@@ -1,15 +1,16 @@
 <div class="container">
     <div class="row">
-        <h3>Dashboard</h3>
+        <h3>{{bow}}</h3>
     </div>
     <div class="row">
         <div class="col-md-4" *ngFor="let item of usersArray">
             <div class="box-detail">
                 <ul>
                     <li>{{item.firstName}}      {{item.lastName}} </li>
-                    <li>{{item.email}} </li>
+                    <li>{{item.password}} </li>
                     <li>{{item.register_date}}</li>
-                    <li><button class="btn btn-danger btn-sm" (click)="deleteUser(item.email)">delete</button></li>
+                    <li><button class="btn btn-danger btn-sm" (click)="deleteUser(item.email)">delete</button>
+                        <a style="margin-left: 5px;" class="btn btn-primary btn-sm" routerLink="/detail" >detail</a></li>
                 </ul>
             </div>
         </div>

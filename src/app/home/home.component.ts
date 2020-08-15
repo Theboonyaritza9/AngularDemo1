@@ -10,13 +10,14 @@ import { HttpClient } from '@angular/common/http';
 export class HomeComponent implements OnInit {
 
   title = 'myApp';
+  bow = 'wimonwan';
   usersArray: any[] = []
 
   constructor(private http: HttpClient) {
 
   }
 
-
+ 
   // Request All users from Backend
   getUsers() {
     this.http.get<any>('http://localhost:5000/api/users').subscribe(res => {
